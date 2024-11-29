@@ -31,7 +31,7 @@ class TestAuthor:
         author_1.name = "ActuallyTopher"
         assert author_1.name == "Carry Bradshaw"
 
-        # comment out the next two lines if using Exceptions
+        # # comment out the next two lines if using Exceptions
         author_2.name = 2
         assert author_2.name == "Nathaniel Hawthorne"
 

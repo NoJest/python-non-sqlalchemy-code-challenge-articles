@@ -27,6 +27,8 @@ class Author:
     def __init__(self, name):
         if isinstance(name, str) and len(name) > 0:
             self._name = name
+        # self._name = name
+        
         self.__class__.all.append(self)  
 
     def articles(self):
@@ -46,7 +48,10 @@ class Author:
     @property
     def name (self):
         return self._name       
-     
+
+    @name.setter
+    def name (self, author_name):
+        pass
      
 class Magazine:
     
